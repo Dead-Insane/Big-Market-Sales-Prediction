@@ -9,9 +9,13 @@ The project follows a standard data science workflow, including **exploratory da
 ---
 
 ## 📁 Project Structure
+
 notebooks/ # Jupyter Notebook (.ipynb) files
+
 data/ # Raw dataset (bigmarket.csv)
+
 README.md # Project documentation
+
 ---
 
 ## 🛠️ Key Steps
@@ -75,3 +79,4 @@ jupyter notebook notebooks/big-market-sales-prediction.ipynb
 - **Data Acquisition**: Integrate additional data sources, such as economic indicators or local events, to enhance forecasting accuracy.  
 
 ---
+
