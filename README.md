@@ -50,13 +50,28 @@ README.md # Project documentation
 ```bash
 git clone https://github.com/Dead-Insane/Big-Market-Sales-Prediction.git
 cd Big-Market-Sales-Prediction
-
-### 2. Set Up the Environment
+```
+### 2. Set up the Enviroment
 ```bash
 conda create -n bigmart python=3.10 -y
 conda activate bigmart
 conda install jupyter tensorflow numpy pandas scikit-learn matplotlib seaborn -y
-
+```
 ### 3. Run Jupyter Notebook
 ```bash
 jupyter notebook notebooks/big-market-sales-prediction.ipynb
+```
+### 4. Results
+- The trained model provides a strong foundation for sales prediction, achieving a relatively low **Root Mean Squared Error (RMSE)** on the test data.  
+- This indicates that the model's predictions are, on average, close to the actual sales values.  
+- The insights from the **EDA** and the performance of the model demonstrate the viability of this approach for **forecasting**.  
+
+---
+
+## 🔮 Future Work
+- **Hyperparameter Tuning**: Optimize the model's performance by tuning hyperparameters of the TensorFlow/Keras algorithm.  
+- **Alternative Models**: Explore other machine learning algorithms, such as Gradient Boosting or Random Forest, to see if they yield better results.  
+- **Feature Engineering**: Create new features from the existing data to improve the model's predictive power.  
+- **Data Acquisition**: Integrate additional data sources, such as economic indicators or local events, to enhance forecasting accuracy.  
+
+---
