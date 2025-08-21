@@ -1,68 +1,62 @@
-Big Market Sales Prediction
-📊 Overview
-This project aims to predict the sales of various products in different Big Market outlets. By analyzing a dataset of product and outlet information, we develop a machine learning model to forecast future sales, which can help in strategic business planning and inventory management.
+# 🛒 Big Market Sales Prediction
 
-The project follows a standard machine learning workflow, including data analysis, pre-processing, and model training.
+## 📊 Overview
+This project aims to **predict the sales of various products in different Big Mart outlets**.  
+By analyzing a dataset of product and outlet information, we build a **machine learning model** to forecast future sales, which can help in **strategic business planning and inventory management**.  
 
-📁 Project Structure
-notebooks/: Contains the Jupyter Notebook (.ipynb) files for the project.
+The project follows a standard data science workflow, including **exploratory data analysis (EDA)**, **data preprocessing**, and **model training & evaluation**.  
 
-data/: Stores the raw dataset (bigmarket.csv).
+---
 
-README.md: This file, providing an overview of the project.
+## 📁 Project Structure
+notebooks/ # Jupyter Notebook (.ipynb) files
+data/ # Raw dataset (bigmarket.csv)
+README.md # Project documentation
+---
 
-🛠️ Key Steps
-1. Exploratory Data Analysis (EDA)
-Objective: To understand the dataset's characteristics, identify patterns, and find missing values or anomalies.
+## 🛠️ Key Steps
 
-Key Activities:
+### 🔍 Exploratory Data Analysis (EDA)
+**Objective:** Understand dataset characteristics, detect patterns, and find missing values or anomalies.  
+**Key Activities:**
+- Visualizing numerical features using **distribution plots** (`displot`).  
+- Analyzing categorical features with **count plots** (`countplot`).  
+- Identifying key factors influencing product sales.  
 
-Visualizing the distribution of numerical features using distribution plots (displot).
+---
 
-Visualizing the counts of categorical features using count plots (countplot).
+### 🧹 Data Preprocessing
+**Objective:** Clean and transform raw data into a suitable format for ML models.  
+**Key Activities:**
+- Handling missing values (e.g., `Item_Weight`, `Outlet_Size`).  
+- Applying **Label Encoding** to categorical features (e.g., `Outlet_Location_Type`).  
+- Fixing inconsistencies in categorical data (e.g., `Item_Fat_Content`).  
 
-Identifying the most important factors influencing sales.
+---
 
-2. Data Pre-processing
-Objective: To clean and transform the raw data into a suitable format for the machine learning model.
+### 🤖 Model Building & Evaluation
+**Objective:** Train predictive models and evaluate performance.  
+**Key Activities:**
+- **Splitting Data**: Features (`X`) vs target (`y = Item_Outlet_Sales`).  
+- **Train-Test Split**: Evaluate performance on unseen data.  
+- **Model Training**: Implemented with **TensorFlow/Keras** regression models.  
+- **Evaluation Metrics**: Used **Root Mean Squared Error (RMSE)** to assess performance.  
 
-Key Activities:
+---
 
-Handling missing values (e.g., in Item_Weight and Outlet_Size).
+## 🚀 How to Run the Project
 
-Label Encoding: Converting categorical features (e.g., Outlet_Location_Type) into numerical form.
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Dead-Insane/Big-Market-Sales-Prediction.git
+cd Big-Market-Sales-Prediction
 
-Handling other data inconsistencies.
+### 2. Set Up the Environment
+```bash
+conda create -n bigmart python=3.10 -y
+conda activate bigmart
+conda install jupyter tensorflow numpy pandas scikit-learn matplotlib seaborn -y
 
-3. Model Building & Evaluation
-Objective: To train a predictive model and evaluate its performance.
-
-Key Activities:
-
-Splitting Data: Separating the features (X) from the target variable (y, Item_Outlet_Sales).
-
-Train-Test Split: Dividing the dataset into a training set and a testing set to evaluate the model's performance on unseen data.
-
-Training Algorithm: Using a TensorFlow/Keras-based algorithm to train the model on the training data.
-
-Model Evaluation: Assessing the model's accuracy and performance on the test set using metrics like Root Mean Squared Error (RMSE).
-
-🚀 How to Run the Project
-Clone the Repository:
-
-git clone https://https://github.com/Dead-Insane/Big-Market-Sales-Prediction.git
-cd your-repo-name
-
-
-Set up the environment:
-It is recommended to use an Anaconda environment.
-
-conda install jupyter tensorflow numpy pandas scikit-learn matplotlib seaborn
-
-
-Run the Jupyter Notebook:
-
-jupyter notebook notebooks/Big-market-sales-prediction.ipynb
-
-
-Follow the steps in the notebook to execute the analysis and model training.
+### 3. Run Jupyter Notebook
+```bash
+jupyter notebook notebooks/big-market-sales-prediction.ipynb
